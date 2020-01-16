@@ -1,6 +1,7 @@
 package com.citizant.irs.taxdatagenerator.controller;
 
 import java.io.OutputStream;
+import java.util.ArrayList;
 import java.util.List;
 
 import javax.servlet.http.HttpServletRequest;
@@ -34,6 +35,11 @@ public class WebController {
     	return "dashboard";
     }
     
+    @GetMapping("/dashboard")
+    public String dashboard() {    	
+    	return "dashboard";
+    }
+    
     @PostMapping("/generateData")
     public String generateData(@ModelAttribute GeneratorConfig config, Model model, HttpServletRequest request) {
     	Form1040Generator gen = new Form1040Generator();
@@ -42,6 +48,19 @@ public class WebController {
     	model.addAttribute("forms", forms);
     	model.addAttribute("taxYear", config.getTaxYear());
     	request.getSession().setAttribute("GEN_FORMS", forms);
+    	return "controls2";
+    }
+    
+    @GetMapping("/showData")
+    public String showData( Model model, HttpServletRequest request) {
+    
+    	List<Form1040> forms = (List<Form1040>)request.getSession().getAttribute("GEN_FORMS");
+    	if(forms!=null) {
+    		model.addAttribute("forms", forms);
+    	} else {
+    		model.addAttribute("forms", new ArrayList<>());
+    	}
+    	model.addAttribute("taxYear", "2020");
     	return "controls2";
     }
     

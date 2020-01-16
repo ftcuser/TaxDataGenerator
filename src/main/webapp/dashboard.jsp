@@ -70,15 +70,11 @@
                             </a>                          
                         </li>
                         <li>
-                            <a href="/control">
-                              <i class="fas fa-caret-square-right"></i>Manual Control
+                            <a href="/showData">
+                              <i class="fas fa-caret-square-right"></i>Generated Data
                             </a>                           
                         </li>           
-                        <li>
-                            <a href="/settings">
-                              <i class="fas fa-gear"></i>Settings
-                            </a>                           
-                        </li>                
+                                  
                     </ul>
                 </nav>
             </div>
