@@ -66,7 +66,7 @@
                     <ul class="list-unstyled navbar__list">
                     <li class="active has-sub">
                             <a class="js-arrow" href="/dashboard">
-                                <i class="fas fa-tachometer-alt"></i>Dashboard                              
+                                <i class="fas fa-tachometer-alt"></i>Data Configuration                              
                             </a>                          
                         </li>
                         <li>
@@ -109,7 +109,7 @@
                             <div class="col-md-12">
                                 <div class="au-breadcrumb-content">
                                     <div class="au-breadcrumb-left">
-                                        <span class="au-breadcrumb-span">You are here:</span>
+                                        <span class="au-breadcrumb-span"></span>
                                         <ul class="list-unstyled list-inline au-breadcrumb__list">
                                             <li class="list-inline-item active">
                                                 <a href="#">Home</a>
@@ -117,7 +117,7 @@
                                             <li class="list-inline-item seprate">
                                                 <span>/</span>
                                             </li>
-                                            <li class="list-inline-item">Data Setting</li>
+                                            <li class="list-inline-item">Data Configuration</li>
                                         </ul>
                                     </div>                                   
                                 </div>
