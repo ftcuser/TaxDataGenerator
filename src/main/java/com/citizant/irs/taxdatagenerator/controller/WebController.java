@@ -42,7 +42,7 @@ public class WebController {
     	model.addAttribute("forms", forms);
     	model.addAttribute("taxYear", config.getTaxYear());
     	request.getSession().setAttribute("GEN_FORMS", forms);
-    	return "controls";
+    	return "controls2";
     }
     
     @GetMapping("/showDetails")
