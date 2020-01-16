@@ -139,17 +139,16 @@
                                     <div class="">                                      
                                         <div class="chart-info-right">
                                           <form id="dataForm" method="post" action="/generateData">
-	                                          <table style="width:100%;" class="table table-stripped">
-	                                          	<thead>
-	                                          		<tr>
-		                                          		<th></th>
-		                                          		<th></th>	                                          	                                         
-	                                          		</tr>
-	                                          	</thead>
+	                                          <table style="width:100%;font-size:0.8em;"" class="table table-stripped">
+	                                          	
 	                                          	<tbody>
 	                                          		<tr>
 	                                          			<td>Tax Year</td>                                         		
 	                                          			<td><input type="text" name="taxYear" class="form-control" value="2019"></td>
+	                                          		</tr>
+	                                          		<tr>
+	                                          			<td>Number of Records</td>                                         		
+	                                          			<td><input type="text" name="numOfRecords" class="form-control" value="1000"></td>
 	                                          		</tr>
 	                                          		<tr>
 	                                          			<td>Percentage of Filling Status
@@ -163,28 +162,25 @@
 	                                          						<td><input type="text" name="perSingle" class="form-control" value="20"></td>
 	                                          					</tr>
 	                                          					<tr>
-	                                          						<td>Married filing jointly</td>
+	                                          						<td>Married Filing Jointly (MFJ)</td>
 	                                          						<td><input type="text" name="perMFJ" class="form-control"  value="50"></td>
 	                                          					</tr>
 	                                          						<tr>
-	                                          						<td>Married filing separately (MFS)</td>
+	                                          						<td>Married Filing Separately (MFS)</td>
 	                                          						<td><input type="text" name="perMFS" class="form-control"  value="20"></td>
 	                                          					</tr>
 	                                          					<tr>
-	                                          						<td>Head of household (HOH)</td>
+	                                          						<td>Head of Household (HOH)</td>
 	                                          						<td><input type="text" name="perHOH" class="form-control"  value="8"></td>
 	                                          					</tr>
 	                                          					<tr>
-	                                          						<td>Qualifying widow(er) (QW)</td>
+	                                          						<td>Qualifying Widow(er) (QW)</td>
 	                                          						<td><input type="text" name="perQW" class="form-control" value="2" ></td>
 	                                          					</tr>       					
 	                                          				</table>
 	                                          			</td>
 	                                          		</tr>
-	                                          		<tr>
-	                                          			<td>Number of Records</td>                                         		
-	                                          			<td><input type="text" name="numOfRecords" class="form-control" value="1000"></td>
-	                                          		</tr>
+	                                          	
 	                                          		<tr>
 	                                          			<td>Percentage of Records You as Dependent</td>                                         		
 	                                          			<td><input type="text" name="perDependent" class="form-control" value="1"></td>
@@ -194,7 +190,7 @@
 	                                          			<td><input type="text" name="perBlind" class="form-control" value="0.5"></td>
 	                                          		</tr>
 	                                          		<tr>
-	                                          			<td>Percentage of Records Born before 1/2/1955</td>                                         		
+	                                          			<td>Percentage of Records Born Before 1/2/1955</td>                                         		
 	                                          			<td><input type="text" name="perBornBefore1955" class="form-control" value="1"></td>
 	                                          		</tr>
 	                                          		<tr>
