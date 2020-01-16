@@ -48,6 +48,7 @@ public class WebController {
     	model.addAttribute("forms", forms);
     	model.addAttribute("taxYear", config.getTaxYear());
     	request.getSession().setAttribute("GEN_FORMS", forms);
+    	request.getSession().setAttribute("TAX_YEAR", config.getTaxYear());
     	return "controls2";
     }
     
@@ -55,12 +56,15 @@ public class WebController {
     public String showData( Model model, HttpServletRequest request) {
     
     	List<Form1040> forms = (List<Form1040>)request.getSession().getAttribute("GEN_FORMS");
+    	String taxYear = (String)request.getSession().getAttribute("TAX_YEAR");
     	if(forms!=null) {
     		model.addAttribute("forms", forms);
+    		model.addAttribute("taxYear", taxYear);
     	} else {
     		model.addAttribute("forms", new ArrayList<>());
+    		model.addAttribute("taxYear", "2019");
     	}
-    	model.addAttribute("taxYear", "2020");
+    	
     	return "controls2";
     }
     

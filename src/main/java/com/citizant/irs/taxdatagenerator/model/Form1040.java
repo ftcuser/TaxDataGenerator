@@ -5,6 +5,7 @@ import java.util.List;
 
 public class Form1040 implements Serializable {
 	
+	private String taxYear;
 	private String fillingStatus;
 	private String firstName;
 	private String lastName;
@@ -45,6 +46,14 @@ public class Form1040 implements Serializable {
 
 	public void setFillingStatus(String fillingStatus) {
 		this.fillingStatus = fillingStatus;
+	}
+
+	public String getTaxYear() {
+		return taxYear;
+	}
+
+	public void setTaxYear(String taxYear) {
+		this.taxYear = taxYear;
 	}
 
 	public String getFirstName() {

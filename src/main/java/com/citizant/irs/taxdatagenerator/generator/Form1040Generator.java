@@ -110,9 +110,8 @@ public class Form1040Generator {
 		
 		//Find out refund or owe
 		for(Form1040 form : forms) {
-			//Set flags 
-			
-			
+			//Set flags 			
+			form.setTaxYear(config.getTaxYear());
 			long diff = form.getPayment().getTotalTax_16() - form.getPayment().getTotalPayments_19();
 			if(diff > 0) {
 				//Owe tax
