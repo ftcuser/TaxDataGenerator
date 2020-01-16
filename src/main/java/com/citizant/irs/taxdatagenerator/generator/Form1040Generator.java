@@ -30,7 +30,6 @@ public class Form1040Generator {
 
 	// Load some lookup data
 	public void init() {
-		System.out.println("hshhsh");
 		this.lastNames = loadFromFile("lastname.txt");
 		this.girlNames = loadFromFile("girls.txt");
 		this.boyNames = loadFromFile("boys.txt");
@@ -39,7 +38,7 @@ public class Form1040Generator {
 		try {
 			AddressHolder holder = objectMapper.readValue(file, AddressHolder.class);
 			this.addresses = holder.getAddresses();
-			System.out.println(this.addresses.get(10).getAddress1());			
+			//System.out.println(this.addresses.get(10).getAddress1());			
 		} catch (JsonParseException e) {		
 			e.printStackTrace();
 		} catch (JsonMappingException e) {			
