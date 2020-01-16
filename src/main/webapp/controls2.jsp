@@ -96,7 +96,7 @@
                             <div class="col-xl-12">
                                 <!-- RECENT REPORT 2-->
                                 <div class="recent-report2">
-                                    <h3 class="title-3">Tax Year ${taxYear}</h3>
+                                    <span class="title-3">Tax Year ${taxYear}</span>
                                     <a class="btn btn-primary float-right" href="/download">Download Sample Data</a>
                                     <hr/>
                                     <div class="">                                      
